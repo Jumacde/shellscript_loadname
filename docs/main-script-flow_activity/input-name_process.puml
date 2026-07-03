@@ -17,4 +17,3 @@ partition input_name.sh {
 	repeat while(inputted name confirm) is (yes) not (no);
 	: save log and show inputted name;
 }
-
