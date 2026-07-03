@@ -13,5 +13,10 @@ strcture:
          get log path from .env and save log in each log path via run-command. 
             - test-enviroment:sudo ./main.sh 
             - prod-enviroment: sudo ENV=prod ./main.sh
-    5. input_name.sh function get_name() - allow input name
+    5. input_name.sh:
+         function input_names() 
+            - allow input name and confirm
+    6. get_name.sh:
+        function get_names()
+            - get inputted name
 

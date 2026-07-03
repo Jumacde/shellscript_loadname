@@ -1,0 +1,10 @@
+@startuml
+start
+: run main.sh
+
+!include log-manager_process.puml
+!include input-name_process.puml
+!include get-name_process.puml
+
+stop
+@enduml

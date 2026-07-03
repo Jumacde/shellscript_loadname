@@ -1,0 +1,19 @@
+@startuml
+	class "main.sh" as main {
+		+ main()
+	}
+	class "input_name.sh" as input {
+		+ input_names()
+	}
+	class "get_name.sh" as get {
+		+ get_names()
+	}
+	class "log_manager.sh" as log {
+		+ get_logdir()
+	}
+
+main ..> log: check and get log_dir
+get ..> input: get inputted name
+input ..> log: save and show name
+main ..> get: show name
+@enduml

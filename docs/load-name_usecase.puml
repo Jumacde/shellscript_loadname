@@ -1,0 +1,31 @@
+@startuml
+
+skinparam packageStyle rectangle
+left to right direction
+
+actor "User" as user
+actor "Git Repository\n(Github/Gitlab)" as git
+
+rectangle "load name(main.sh)" {
+	usecase "execute scripts" as main
+	usecase "input name" as input
+	usecase "confirm name\ 0: no, 1: yes " as conf
+	usecase "input name again" as re_input
+	usecase "get name" as get
+	usecase "manage and save log\n(switch test/prod via .env)" as log
+	usecase "hide log path(.env)" as git_hide
+}
+
+user --> main
+main --> get: << include >>
+get --> input: << include >>
+input --> conf: << include >>
+input --> re_input: << extend >>
+main --> log: << include >>
+
+
+git --> git_hide
+
+
+
+@enduml

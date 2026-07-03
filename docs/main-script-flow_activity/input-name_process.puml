@@ -1,0 +1,20 @@
+partition input_name.sh {
+	: load input_names() from input_name.sh;
+	: input any name;
+	: confirm inputted name;
+	
+	repeat
+	note right
+	confirm yes: 1, no 0
+	end note
+	
+	if (confirm name?) then (yes)
+		: confirm name; 
+	else (no)
+		: input name again;
+	endif
+	backward: loop back to input_name;
+	repeat while(inputted name confirm) is (yes) not (no);
+	: save log and show inputted name;
+}
+

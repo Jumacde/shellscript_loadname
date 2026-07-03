@@ -1,0 +1,6 @@
+partition get_name.sh {
+	: load get_names() from get_name.sh;
+	: get inputted name;
+
+
+}
