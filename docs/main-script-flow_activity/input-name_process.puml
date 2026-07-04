@@ -1,8 +1,12 @@
 partition input_name.sh {
 	: load input_names() from input_name.sh;
-	: input any name;
-	repeat
-	backward: loop back to input_name;
-	repeat while(confirm inputted name?) is (no: 0) not (yes: 1);
-	: save log and show inputted name;
+	repeat	
+		: input any name;
+		: load confirm_names() from input_name.sh;
+		repeat
+			: input confirmation (0:no, 1:yes);
+		repeat while (is input 0 or 1?) is (no (other))
+	repeat while (is confirmation 1?) is (no (0))
+	:save log and show inputted name;
 }
+

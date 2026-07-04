@@ -4,6 +4,7 @@
 	}
 	class "input_name.sh" as input {
 		+ input_names()
+		+ confirm_names()
 	}
 	class "get_name.sh" as get {
 		+ get_names()
