@@ -13,7 +13,7 @@
 		+ log_message()
 	}
 
-main ..> log: check and get log_dir
+main ..> log: check and get log_dir\nsave log
 get ..> input: get inputted name
 input ..> log: save and show name
 main ..> get: show name
