@@ -3,6 +3,6 @@ partition input_name.sh {
 	: input any name;
 	repeat
 	backward: loop back to input_name;
-	repeat while(inputted name confirm) is (yes: 1) not (no: 0);
+	repeat while(confirm inputted name?) is (no: 0) not (yes: 1);
 	: save log and show inputted name;
 }
