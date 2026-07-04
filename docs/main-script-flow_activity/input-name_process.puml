@@ -4,16 +4,7 @@ partition input_name.sh {
 	: confirm inputted name;
 	
 	repeat
-	note right
-	confirm yes: 1, no 0
-	end note
-	
-	if (confirm name?) then (yes)
-		: confirm name; 
-	else (no)
-		: input name again;
-	endif
 	backward: loop back to input_name;
-	repeat while(inputted name confirm) is (yes) not (no);
+	repeat while(inputted name confirm) is (yes: 1) not (no: 0);
 	: save log and show inputted name;
 }
