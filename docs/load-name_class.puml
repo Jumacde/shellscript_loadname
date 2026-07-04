@@ -10,6 +10,7 @@
 	}
 	class "log_manager.sh" as log {
 		+ get_logdir()
+		+ log_message()
 	}
 
 main ..> log: check and get log_dir
