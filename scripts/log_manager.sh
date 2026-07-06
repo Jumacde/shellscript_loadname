@@ -26,9 +26,10 @@ get_logdir() {
 }
 
 # add a method: allow to show detailed log data.
-log_message {
-	local PRIORITY="$1"
-	local message="$2"
-	echo "(data -u +"%Y-%m-%dT%H:%M:%SZ") [${PRIORITY}] &{message}" >> "${log_dir}"
+log_message() {
+	local PRIORITY="${0##*/}"
+	local message="$1"
+	local status="$2"
+	echo "$(TZ="Europe/Berlin" date  +"%d-%m-%Y %H:%M:%S") [${PRIORITY}] [${status}] -  ${message}" >> "${log_dir}"
 
 }
