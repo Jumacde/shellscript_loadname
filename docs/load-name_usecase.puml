@@ -11,6 +11,7 @@ rectangle "load name(main.sh)" {
 	usecase "input name" as input
 	usecase "confirm name\ 0: no, 1: yes " as conf
 	usecase "input name again" as re_input
+	usecase "confirm name again" as re_conf
 	usecase "get name" as get
 	usecase "manage and save log\n(switch test/prod via .env)" as log
 	usecase "hide log path(.env)" as git_hide
@@ -20,9 +21,15 @@ user --> main
 main --> get: << include >>
 get --> input: << include >>
 input --> conf: << include >>
+conf --> re_conf: << extend >>
 input --> re_input: << extend >>
 main --> log: << include >>
-
+main --> input << include >>
+main --> conf << include >>
+conf --> log << include >>
+input --> log << include >>
+re_conf --> log << include >>
+re_input --> log << include >>
 
 git --> git_hide
 
