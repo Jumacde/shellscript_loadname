@@ -1,0 +1,18 @@
+06-07-2026 18:02:24 [main.sh] [Name test_name1 is inputted] -  SUCCESS
+06-07-2026 18:02:26 [main.sh] [test_name1 is confirmed] -  SUCCESS
+test_name1
+06-07-2026 18:02:58 [main.sh] [Name test_name2 is inputted] -  SUCCESS
+06-07-2026 18:02:59 [main.sh] [comfirmation rejected. re-inputting] -  INFO
+06-07-2026 18:03:06 [main.sh] [Name testname2.0 is inputted] -  SUCCESS
+06-07-2026 18:03:11 [main.sh] [testname2.0 is confirmed] -  SUCCESS
+testname2.0
+06-07-2026 18:03:32 [main.sh] [Name test_name3 is inputted] -  SUCCESS
+06-07-2026 18:03:35 [main.sh] [Invalid confirm choice: fdsf] -  WARN
+06-07-2026 18:03:38 [main.sh] [test_name3 is confirmed] -  SUCCESS
+test_name3
+06-07-2026 18:04:04 [main.sh] [Name test_name4 is inputted] -  SUCCESS
+06-07-2026 18:04:07 [main.sh] [Invalid confirm choice: rewrwtwr] -  WARN
+06-07-2026 18:04:11 [main.sh] [comfirmation rejected. re-inputting] -  INFO
+06-07-2026 18:04:22 [main.sh] [Name test_name4.0 is inputted] -  SUCCESS
+06-07-2026 18:04:24 [main.sh] [test_name4.0 is confirmed] -  SUCCESS
+test_name4.0
