@@ -6,6 +6,5 @@ main() {
 	input_names
 	confirm_names
 	get_names
-	
 }
 main

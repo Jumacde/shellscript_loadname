@@ -16,3 +16,15 @@ test_name3
 06-07-2026 18:04:22 [main.sh] [Name test_name4.0 is inputted] -  SUCCESS
 06-07-2026 18:04:24 [main.sh] [test_name4.0 is confirmed] -  SUCCESS
 test_name4.0
+06-07-2026 19:13:22 [main.sh] [Name koko is inputted] -  SUCCESS
+06-07-2026 19:13:25 [main.sh] [koko is confirmed] -  SUCCESS
+koko
+06-07-2026 19:25:08 [main.sh] [Name kkk is inputted] -  SUCCESS
+06-07-2026 19:25:10 [main.sh] [kkk is confirmed] -  SUCCESS
+kkk
+06-07-2026 19:26:19 [main.sh] [Name ggg is inputted] -  SUCCESS
+06-07-2026 19:26:20 [main.sh] [ggg is confirmed] -  SUCCESS
+ggg
+06-07-2026 19:28:36 [main.sh] [Name lll is inputted] -  SUCCESS
+06-07-2026 19:28:37 [main.sh] [lll is confirmed] -  SUCCESS
+lll
